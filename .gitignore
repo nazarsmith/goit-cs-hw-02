@@ -4,7 +4,6 @@ __pycache__
 .idea
 .pytest_cache
 book
-Pipfile
 pipfile.lock
 setup.py
 LICENSE
