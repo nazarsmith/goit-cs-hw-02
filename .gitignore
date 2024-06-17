@@ -1,0 +1,16 @@
+__pycache__
+.env
+.venv
+.idea
+.pytest_cache
+book
+Pipfile
+pipfile.lock
+setup.py
+LICENSE
+*.egg-info
+dist
+build
+.DS_Store
+.cache
+additional_instructions.md

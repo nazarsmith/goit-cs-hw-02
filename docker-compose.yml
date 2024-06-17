@@ -1,0 +1,17 @@
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: test_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 567234
+    ports:
+      - "5432:5432"
+#    volumes:
+#      - ./postgres-data:/var/lib/postgresql/data/db_hw2
+  app:
+    build: .
+    ports:
+      - "5000:8000"
+    depends_on:
+      - postgres
