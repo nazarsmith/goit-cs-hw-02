@@ -6,8 +6,8 @@ COPY Pipfile .
 RUN python -m pip install pipenv
 RUN pipenv install --system --skip-lock
 
-COPY Computer-Systems-hw02 Computer-Systems-hw02/
-WORKDIR Computer-Systems-hw02
+COPY fast-api-service fast-api-service/
+WORKDIR fast-api-service
 
 RUN python
 
